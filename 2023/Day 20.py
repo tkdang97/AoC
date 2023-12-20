@@ -118,12 +118,5 @@ def part2(modules):
     return lcm(*diffs)
 
 
-test = """broadcaster -> a
-%a -> inv, con
-&inv -> b
-%b -> con
-&con -> output"""
-
-
 data = get_and_write_data(20, 2023)
 print_output(part1(parse(data)), part2(parse(data)))
