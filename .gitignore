@@ -2,3 +2,4 @@
 venv
 
 **/inputs/*.txt
+**/__pycache__
