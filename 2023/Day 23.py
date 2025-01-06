@@ -10,7 +10,6 @@ def parse(data):
     return res, start, end
 
 
-@timeit
 def part1(grid, start, end):
     DIRS = {">": (0, 1), "v": (1, 0), "<": (0, -1), "^": (-1, 0)}
     n, m = len(grid), len(grid[0])
@@ -69,7 +68,6 @@ def build_edges(grid):
     return edges
 
 
-@timeit
 def part2(grid, start, end):
     edges = build_edges(grid)
     queue = [start + (0, )]

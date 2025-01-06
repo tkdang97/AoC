@@ -1,5 +1,7 @@
 .idea
-venv
+venv*
+.vscode
 
 **/inputs/*.txt
 **/__pycache__
+**/Test.py
